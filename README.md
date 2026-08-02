@@ -4,33 +4,35 @@ A complete client-side web application for managing car parking tickets. Built w
 
 **No build step, no server, no installation needed.**
 
-
+---
 <img width="1918" height="942" alt="image" src="https://github.com/user-attachments/assets/c4f29be6-8710-4648-baf6-c9163ad87d5a" />
 
+---
 >
 <img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/fdbaa2cd-21c1-437a-8983-7291191a153d" />
 
-
+---
 >
 <img width="1917" height="939" alt="image" src="https://github.com/user-attachments/assets/95eaef11-9407-44aa-9ca2-a178ef27a216" />
 
-
+---
 >
 <img width="1895" height="921" alt="image" src="https://github.com/user-attachments/assets/eee39897-edcd-4a12-a3e1-525927165756" />
 
-
+---
 >
 <img width="1919" height="942" alt="image" src="https://github.com/user-attachments/assets/c3635423-0efc-4672-84c2-dfe67692db30" />
 
-
+---
 >
 <img width="1919" height="944" alt="image" src="https://github.com/user-attachments/assets/b3ac4c40-0d4b-4885-8ae3-4e5cd0d16d4d" />
 
-
+---
 >
 <img width="1916" height="942" alt="image" src="https://github.com/user-attachments/assets/7c06d7d5-9b4e-446f-9e3a-0ba5d91b6abe" />
 
-
+---
+>
 ## Features
 
 - **Ticket Management** — Issue, track, and close parking tickets with auto-calculated fees
