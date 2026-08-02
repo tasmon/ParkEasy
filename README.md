@@ -1,4 +1,4 @@
-# 🅿️ ParkEasy - Car Parking Ticket Management
+# ParkEasy - Car Parking Ticket Management
 
 A complete client-side web application for managing car parking tickets. Built with pure HTML + CSS + JavaScript (Tailwind CSS via CDN).
 **No build step, no server, no installation needed.**
@@ -24,7 +24,7 @@ A complete client-side web application for managing car parking tickets. Built w
 <img width="1916" height="942" alt="image" src="https://github.com/user-attachments/assets/7c06d7d5-9b4e-446f-9e3a-0ba5d91b6abe" />
 
 
-## ✨ Features
+## Features
 
 - **Ticket Management** — Issue, track, and close parking tickets with auto-calculated fees
 - **Receipt Printing** — Beautiful print-ready receipts (entry slip + exit receipt) with vehicle number, type, entry/exit times and fees
@@ -57,7 +57,7 @@ That's it! The app loads and works immediately. No installation, no admin rights
 If you want coworkers, branch offices, or multiple devices to access ParkEasy from the same dataset, you need to host it on a **proper web server** (not just opening the HTML file). A web server is required because browsers block certain features when files are opened directly via `file://`.
 
 
-> ⚠️ **Important note about GitHub Pages and data:**
+> **Important note about GitHub Pages and data:**
 > Since each device has its own `localStorage`, data does **not** sync between devices automatically. For multi-device sync, see "Backend Sync" at the bottom.
 
 #### B. Any Other Web Host
@@ -78,7 +78,7 @@ If you want ParkEasy running on your office's local network with no internet:
 
 ---
 
-## 💾 Data & Backup
+## Data & Backup
 
 All data (users, tickets, rates, settings) is stored in your browser's `localStorage`. **This means:**
 
@@ -104,7 +104,7 @@ All data (users, tickets, rates, settings) is stored in your browser's `localSto
 
 ---
 
-## ⚙️ First-Time Setup
+## First-Time Setup
 
 After first opening the app:
 
@@ -117,7 +117,7 @@ After first opening the app:
 
 ---
 
-## 🎨 Customization
+## Customization
 
 - **Logo / Icon:** Replace `icon.png` in the folder with your own (square shape, ideally 64×64 or 128×128 PNG). It appears in the browser tab, the header, and the About page.
 - **Currency / Header / Footer / Address:** All editable from the Settings page inside the app.
@@ -126,16 +126,10 @@ After first opening the app:
 
 ---
 
-## 🌐 Multi-Language & Multi-Currency
+## Multi-Language & Multi-Currency
 
 - **Languages:** 7 built-in, switch from the dropdown in the top-right corner. Arabic automatically switches to right-to-left layout.
 - **Currencies:** 21 presets (USD, EUR, GBP, INR, JPY, CNY, KRW, RUB, BRL, AUD, CAD, CHF, SEK, TRY, AED, SAR, MYR, SGD, IDR, PHP, BDT, PKR). Or pick **"Custom Symbol..."** to enter any text (e.g. `kr`, `د.ج`, `R`).
-
----
-
-## 🛠️ Technologies
-
-HTML5 · CSS3 · JavaScript (ES6+) · Tailwind CSS · LocalStorage API · Print API
 
 ---
 
@@ -146,13 +140,3 @@ This is a **client-side** application for personal or small-business use:
 - Passwords are hashed (using a non-cryptographic string-mixing algorithm).
 - All data lives in the user's browser — there is no central server.
 - For **production / multi-user** deployment, consider adding a backend (Firebase, Supabase, Node.js + PostgreSQL) for proper authentication, shared data, and audit logs.
-
----
-
-## 📞 Support
-
-For issues, feature requests, or feedback:
-
-**Email:** tasmon@outlook.com
-
----
