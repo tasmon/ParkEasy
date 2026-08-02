@@ -2,6 +2,16 @@
 
 A complete client-side web application for managing car parking tickets, built with pure HTML + CSS + JavaScript (Tailwind CSS via CDN). No build step, no server required.
 
+<img width="1917" height="941" alt="image" src="https://github.com/user-attachments/assets/52024c5e-f7f7-4f1c-bfe2-157de79d65e6" />
+
+>
+<img width="1910" height="938" alt="image" src="https://github.com/user-attachments/assets/8ea14fef-97f1-4e74-91de-df54c7702da8" />
+
+>
+<img width="1916" height="942" alt="image" src="https://github.com/user-attachments/assets/eb53def5-4e8d-4e8e-aaf5-31ac74125dd6" />
+
+
+
 ## ✨ Features
 
 - **🎫 Ticket Management** – Issue, track, and close parking tickets with auto-calculated fees
