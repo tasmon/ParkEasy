@@ -10,56 +10,56 @@
 </head>
 <body data-theme="default">
 
-<!-- ============================== LOGIN SCREEN ============================== -->
+<!-- ============================== LOGIN ============================== -->
 <div id="loginScreen" class="min-h-screen flex items-center justify-center p-4">
 <div class="bg-surface shadow-strong rounded-2xl p-8 w-full max-w-md">
 <div class="text-center mb-6">
 <img src="icon.png" alt="ParkEasy" class="w-20 h-20 mx-auto mb-2" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" />
-<div class="text-6xl mb-2" style="display:none">🅿️</div>
+<div class="text-6xl mb-2 font-bold" style="display:none">P</div>
 <h1 class="text-3xl font-bold">ParkEasy</h1>
 <p class="text-muted text-sm">Car Parking Management System</p>
 </div>
 
 <form id="loginForm" class="space-y-4">
 <div>
-<label class="block text-sm font-medium mb-1">Username</label>
+<label class="block text-sm font-medium mb-1" data-i18n="username">Username</label>
 <input type="text" id="loginUsername" required class="w-full px-4 py-2 rounded-lg">
 </div>
 <div>
-<label class="block text-sm font-medium mb-1">Password</label>
+<label class="block text-sm font-medium mb-1" data-i18n="password">Password</label>
 <input type="password" id="loginPassword" required class="w-full px-4 py-2 rounded-lg">
 </div>
-<button type="submit" class="w-full btn-primary py-2 rounded-lg font-semibold transition">Sign In</button>
+<button type="submit" class="w-full btn-primary py-2 rounded-lg font-semibold transition" data-i18n="sign_in">Sign In</button>
 <p id="loginError" class="text-red-500 text-sm text-center hidden"></p>
 </form>
 
 <div class="mt-6 text-center">
-<button id="showSignup" class="hover:underline text-sm font-medium" style="color:var(--primary)">Don't have an account? Create one</button>
+<button id="showSignup" class="hover:underline text-sm font-medium" style="color:var(--primary)" data-i18n="create_account">Create one</button>
 </div>
 
 <div class="mt-3 text-center">
-<button id="showForgot" class="text-muted hover:underline text-xs">Forgot password?</button>
+<button id="showForgot" class="text-muted hover:underline text-xs" data-i18n="forgot_password">Forgot password?</button>
 </div>
 
 <div class="mt-4 pt-4 border-t" style="border-color:var(--border)">
 <select id="loginLang" class="w-full px-3 py-1.5 rounded-lg text-sm">
-<option value="en">🇬🇧 English</option>
-<option value="hi">🇮🇳 हिन्दी (Hindi)</option>
-<option value="es">🇪🇸 Español (Spanish)</option>
-<option value="fr">🇫🇷 Français (French)</option>
-<option value="ar">🇸🇦 العربية (Arabic)</option>
-<option value="zh">🇨🇳 中文 (Chinese)</option>
-<option value="bn">🇧🇩 বাংলা (Bengali)</option>
+<option value="en">English</option>
+<option value="bn">বাংলা (Bengali)</option>
+<option value="hi">हिन्दी (Hindi)</option>
+<option value="es">Español (Spanish)</option>
+<option value="fr">Français (French)</option>
+<option value="ar">العربية (Arabic)</option>
+<option value="zh">中文 (Chinese)</option>
 </select>
 </div>
 </div>
 </div>
 
-<!-- ============================== SIGNUP SCREEN ============================== -->
+<!-- ============================== SIGNUP ============================== -->
 <div id="signupScreen" class="min-h-screen hidden items-center justify-center p-4">
 <div class="bg-surface shadow-strong rounded-2xl p-8 w-full max-w-md">
 <div class="text-center mb-6">
-<div class="text-5xl mb-2">👤</div>
+<div class="text-5xl mb-2 font-bold">+</div>
 <h2 class="text-2xl font-bold">Create Account</h2>
 <p class="text-muted text-xs">Set security questions for password recovery</p>
 </div>
@@ -71,7 +71,7 @@
 <input type="text" id="suFullName" required placeholder="Full Name" class="w-full px-3 py-2 rounded-lg text-sm">
 
 <div class="border-t pt-3 mt-3" style="border-color:var(--border)">
-<p class="text-xs font-semibold text-muted mb-2">🔐 Security Questions (for password recovery):</p>
+<p class="text-xs font-semibold text-muted mb-2">Security Questions (for password recovery):</p>
 <select id="suQ1" class="w-full px-3 py-2 rounded-lg text-sm mb-2">
 <option value="">-- Select Question 1 --</option>
 <option>What is your favorite color?</option>
@@ -82,7 +82,6 @@
 <option>What is your favorite food?</option>
 </select>
 <input type="text" id="suA1" required placeholder="Answer 1" class="w-full px-3 py-2 rounded-lg text-sm mb-2">
-
 <select id="suQ2" class="w-full px-3 py-2 rounded-lg text-sm mb-2">
 <option value="">-- Select Question 2 --</option>
 <option>What is your favorite movie?</option>
@@ -93,7 +92,6 @@
 <option>What street did you grow up on?</option>
 </select>
 <input type="text" id="suA2" required placeholder="Answer 2" class="w-full px-3 py-2 rounded-lg text-sm mb-2">
-
 <select id="suQ3" class="w-full px-3 py-2 rounded-lg text-sm mb-2">
 <option value="">-- Select Question 3 --</option>
 <option>What is your favorite car?</option>
@@ -111,7 +109,7 @@
 </form>
 
 <div class="mt-4 text-center">
-<button id="backToLogin" class="hover:underline text-sm" style="color:var(--primary)">← Back to login</button>
+<button id="backToLogin" class="hover:underline text-sm" style="color:var(--primary)" data-i18n="back_to_login">Back to login</button>
 </div>
 </div>
 </div>
@@ -120,7 +118,7 @@
 <div id="forgotScreen" class="min-h-screen hidden items-center justify-center p-4">
 <div class="bg-surface shadow-strong rounded-2xl p-8 w-full max-w-md">
 <div class="text-center mb-6">
-<div class="text-5xl mb-2">🔑</div>
+<div class="text-5xl mb-2 font-bold">?</div>
 <h2 class="text-2xl font-bold">Reset Password</h2>
 <p class="text-muted text-xs">Answer your security questions</p>
 </div>
@@ -138,7 +136,7 @@
 </form>
 
 <div class="mt-4 text-center">
-<button id="backToLogin2" class="hover:underline text-sm" style="color:var(--primary)">← Back to login</button>
+<button id="backToLogin2" class="hover:underline text-sm" style="color:var(--primary)" data-i18n="back_to_login">Back to login</button>
 </div>
 </div>
 </div>
@@ -147,63 +145,67 @@
 <div id="mainApp" class="hidden min-h-screen">
 
 <header class="app-header sticky top-0 z-40">
-<div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between flex-wrap gap-3">
-<div class="flex items-center gap-3">
-<img src="icon.png" alt="ParkEasy" class="w-10 h-10" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" />
-<div class="text-3xl" style="display:none">🅿️</div>
-<div>
-<h1 class="text-xl font-bold">ParkEasy</h1>
-<p class="text-xs text-muted" id="welcomeUser">Welcome</p>
+<!-- Top row: Logo (left) | Lang dropdown + Logout (right) -->
+<div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<img src="icon.png" alt="ParkEasy" class="w-10 h-10 flex-shrink-0" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" />
+<div class="text-2xl font-bold" style="display:none">P</div>
+<div class="min-w-0">
+<h1 class="text-xl font-bold leading-tight">ParkEasy</h1>
+<p class="text-xs text-muted truncate" id="welcomeUser">Welcome</p>
 </div>
 </div>
-<nav class="flex gap-1 flex-wrap">
-<button data-view="dashboard" class="nav-btn">📊 Dashboard</button>
-<button data-view="newTicket" class="nav-btn">🎫 New Ticket</button>
-<button data-view="active" class="nav-btn">🚗 Active</button>
-<button data-view="history" class="nav-btn">📜 History</button>
-<button data-view="rates" class="nav-btn">💵 Rates</button>
-<button data-view="backup" class="nav-btn">💾 Backup</button>
-<button data-view="settings" class="nav-btn">⚙️ Settings</button>
-<button data-view="help" class="nav-btn">❓ Help</button>
-<button data-view="about" class="nav-btn">ℹ️ About</button>
-</nav>
 <div class="flex items-center gap-2">
 <select id="appLang" class="px-2 py-1.5 rounded-lg text-xs">
-<option value="en">🇬🇧 EN</option>
-<option value="hi">🇮🇳 HI</option>
-<option value="es">🇪🇸 ES</option>
-<option value="fr">🇫🇷 FR</option>
-<option value="ar">🇸🇦 AR</option>
-<option value="zh">🇨🇳 ZH</option>
-<option value="bn">🇧🇩 BN</option>
+<option value="en">EN</option>
+<option value="bn">BN</option>
+<option value="hi">HI</option>
+<option value="es">ES</option>
+<option value="fr">FR</option>
+<option value="ar">AR</option>
+<option value="zh">ZH</option>
 </select>
-<button id="logoutBtn" class="bg-red-500 hover:bg-red-600 text-white px-3 py-1.5 rounded-lg text-sm">Logout</button>
+<button id="logoutBtn" class="bg-red-500 hover:bg-red-600 text-white px-3 py-1.5 rounded-lg text-sm" data-i18n="logout">Logout</button>
+</div>
+</div>
+<!-- Bottom row: Navigation buttons (centered) -->
+<div class="border-t" style="border-color:var(--border)">
+<div class="max-w-7xl mx-auto px-4 py-2 flex justify-center gap-1 flex-wrap">
+<button data-view="dashboard" class="nav-btn" data-i18n="dashboard">Dashboard</button>
+<button data-view="newTicket" class="nav-btn" data-i18n="new_ticket">New Ticket</button>
+<button data-view="active" class="nav-btn" data-i18n="active">Active</button>
+<button data-view="history" class="nav-btn" data-i18n="history">History</button>
+<button data-view="rates" class="nav-btn" data-i18n="rate_management">Rates</button>
+<button data-view="backup" class="nav-btn" data-i18n="backup">Backup</button>
+<button data-view="settings" class="nav-btn" data-i18n="settings">Settings</button>
+<button data-view="help" class="nav-btn" data-i18n="help_title">Help</button>
+<button data-view="about" class="nav-btn" data-i18n="about">About</button>
 </div>
 </div>
 </header>
 
 <main class="max-w-7xl mx-auto p-4">
 
-<!-- Dashboard -->
+<!-- DASHBOARD -->
 <section id="view-dashboard" class="view space-y-4">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
 <div class="stat-card" style="background:linear-gradient(135deg,#3b82f6,#1d4ed8)">
-<div class="text-5xl mb-2">🚗</div>
+<div class="text-5xl mb-2 font-bold opacity-90">A</div>
 <div class="text-3xl font-bold" id="statActive">0</div>
 <div class="text-sm opacity-90" data-i18n="active_vehicles">Active Vehicles</div>
 </div>
 <div class="stat-card" style="background:linear-gradient(135deg,#22c55e,#15803d)">
-<div class="text-5xl mb-2">💰</div>
+<div class="text-5xl mb-2 font-bold opacity-90">$</div>
 <div class="text-3xl font-bold" id="statRevenue">$0</div>
 <div class="text-sm opacity-90" data-i18n="todays_revenue">Today's Revenue</div>
 </div>
 <div class="stat-card" style="background:linear-gradient(135deg,#a855f7,#7e22ce)">
-<div class="text-5xl mb-2">📊</div>
+<div class="text-5xl mb-2 font-bold opacity-90">#</div>
 <div class="text-3xl font-bold" id="statTotal">0</div>
 <div class="text-sm opacity-90" data-i18n="total_tickets">Total Tickets</div>
 </div>
 <div class="stat-card" style="background:linear-gradient(135deg,#f59e0b,#d97706)">
-<div class="text-5xl mb-2">📅</div>
+<div class="text-5xl mb-2 font-bold opacity-90">D</div>
 <div class="text-3xl font-bold" id="statDate">--</div>
 <div class="text-sm opacity-90" data-i18n="today">Today</div>
 </div>
@@ -227,25 +229,25 @@
 </div>
 </section>
 
-<!-- New Ticket -->
+<!-- NEW TICKET -->
 <section id="view-newTicket" class="view hidden">
 <div class="card max-w-2xl mx-auto">
-<h2 class="text-2xl font-bold mb-4" data-i18n="issue_ticket">🎫 Issue New Parking Ticket</h2>
+<h2 class="text-2xl font-bold mb-4" data-i18n="issue_ticket">Issue New Parking Ticket</h2>
 <form id="newTicketForm" class="space-y-4">
 <div>
-<label class="block text-sm font-medium mb-1" data-i18n="vehicle_number">Vehicle Number *</label>
+<label class="block text-sm font-medium mb-1"><span data-i18n="vehicle_number">Vehicle Number</span> *</label>
 <input type="text" id="ntVehicleNo" required placeholder="e.g. MH12AB1234" class="w-full px-4 py-2 rounded-lg uppercase">
 </div>
 <div>
-<label class="block text-sm font-medium mb-1" data-i18n="vehicle_type">Vehicle Type *</label>
+<label class="block text-sm font-medium mb-1"><span data-i18n="vehicle_type">Vehicle Type</span> *</label>
 <select id="ntVehicleType" required class="w-full px-4 py-2 rounded-lg"></select>
 </div>
 <div>
-<label class="block text-sm font-medium mb-1" data-i18n="owner_name">Owner Name (Optional)</label>
+<label class="block text-sm font-medium mb-1"><span data-i18n="owner_name">Owner Name</span> <span class="text-muted text-xs">(Optional)</span></label>
 <input type="text" id="ntOwner" placeholder="Customer name" class="w-full px-4 py-2 rounded-lg">
 </div>
 <div>
-<label class="block text-sm font-medium mb-1" data-i18n="phone">Phone (Optional)</label>
+<label class="block text-sm font-medium mb-1"><span data-i18n="phone">Phone</span> <span class="text-muted text-xs">(Optional)</span></label>
 <input type="tel" id="ntPhone" placeholder="Phone number" class="w-full px-4 py-2 rounded-lg">
 </div>
 <div class="flex gap-3 pt-2">
@@ -253,16 +255,15 @@
 <button type="reset" class="bg-gray-300 hover:bg-gray-400 px-6 py-2 rounded-lg" data-i18n="clear">Clear</button>
 </div>
 </form>
-<div id="newTicketResult" class="hidden mt-4"></div>
 </div>
 </section>
 
-<!-- Active -->
+<!-- ACTIVE -->
 <section id="view-active" class="view hidden">
 <div class="card">
 <div class="flex justify-between items-center mb-3 flex-wrap gap-2">
-<h2 class="text-2xl font-bold" data-i18n="active_vehicles">🚗 Active Vehicles</h2>
-<input type="text" id="activeSearch" placeholder="Search by vehicle no..." class="px-3 py-1.5 rounded-lg text-sm">
+<h2 class="text-2xl font-bold" data-i18n="active_vehicles">Active Vehicles</h2>
+<input type="text" id="activeSearch" data-i18n-ph="search_vehicle" placeholder="Search by vehicle no..." class="px-3 py-1.5 rounded-lg text-sm">
 </div>
 <div class="overflow-x-auto">
 <table class="w-full text-sm">
@@ -282,10 +283,10 @@
 </div>
 </section>
 
-<!-- History -->
+<!-- HISTORY -->
 <section id="view-history" class="view hidden">
 <div class="card">
-<h2 class="text-2xl font-bold mb-3" data-i18n="history">📜 Ticket History</h2>
+<h2 class="text-2xl font-bold mb-3" data-i18n="history">Ticket History</h2>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-3">
 <input type="date" id="histFrom" class="px-3 py-2 rounded-lg">
 <input type="date" id="histTo" class="px-3 py-2 rounded-lg">
@@ -308,12 +309,12 @@
 </div>
 </section>
 
-<!-- Rates -->
+<!-- RATES -->
 <section id="view-rates" class="view hidden">
 <div class="card">
 <div class="flex justify-between items-center mb-4">
-<h2 class="text-2xl font-bold" data-i18n="rate_management">💵 Vehicle Rate Management</h2>
-<button id="addRateBtn" class="bg-green-600 hover:bg-green-700 text-white px-3 py-1.5 rounded-lg text-sm">+ Add Rate</button>
+<h2 class="text-2xl font-bold" data-i18n="rate_management">Vehicle Rate Management</h2>
+<button id="addRateBtn" class="bg-green-600 hover:bg-green-700 text-white px-3 py-1.5 rounded-lg text-sm">+ <span data-i18n="add_rate">Add Rate</span></button>
 </div>
 <div class="overflow-x-auto">
 <table class="w-full text-sm">
@@ -329,23 +330,23 @@
 </div>
 </section>
 
-<!-- Backup -->
+<!-- BACKUP -->
 <section id="view-backup" class="view hidden">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 <div class="card">
-<h3 class="text-xl font-bold mb-3" data-i18n="backup">💾 Backup Data</h3>
+<h3 class="text-xl font-bold mb-3" data-i18n="backup">Backup Data</h3>
 <p class="text-sm text-muted mb-4">Download a backup of all tickets, rates and settings as JSON file.</p>
-<button id="backupBtn" class="w-full btn-primary py-2 rounded-lg font-semibold" data-i18n="download_backup"> Backup</button>
+<button id="backupBtn" class="w-full btn-primary py-2 rounded-lg font-semibold" data-i18n="download_backup">Download Backup</button>
 </div>
 <div class="card">
-<h3 class="text-xl font-bold mb-3" data-i18n="restore">📥 Restore Data</h3>
+<h3 class="text-xl font-bold mb-3" data-i18n="restore">Restore Data</h3>
 <p class="text-sm text-muted mb-4">Upload a previously saved backup JSON to restore data.</p>
 <input type="file" id="restoreFile" accept=".json" class="w-full mb-2 text-sm">
-<button id="restoreBtn" class="w-full bg-orange-600 hover:bg-orange-700 text-white py-2 rounded-lg font-semibold" data-i18n="restore_backup"> Backup</button>
+<button id="restoreBtn" class="w-full bg-orange-600 hover:bg-orange-700 text-white py-2 rounded-lg font-semibold" data-i18n="restore_backup">Restore Backup</button>
 <p id="restoreMsg" class="text-sm text-center mt-2"></p>
 </div>
 <div class="card md:col-span-2">
-<h3 class="text-xl font-bold mb-3" data-i18n="clear_data">🗑️ Clear Data</h3>
+<h3 class="text-xl font-bold mb-3" data-i18n="clear_data">Clear Data</h3>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
 <button data-clear="tickets" class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 rounded-lg">Clear Tickets Only</button>
 <button data-clear="all" class="bg-red-600 hover:bg-red-700 text-white py-2 rounded-lg">Clear Everything</button>
@@ -355,10 +356,10 @@
 </div>
 </section>
 
-<!-- Settings -->
+<!-- SETTINGS -->
 <section id="view-settings" class="view hidden">
 <div class="card max-w-2xl mx-auto">
-<h2 class="text-2xl font-bold mb-4" data-i18n="settings">⚙️ Application Settings</h2>
+<h2 class="text-2xl font-bold mb-4" data-i18n="settings">Settings</h2>
 
 <div class="space-y-4">
 <div>
@@ -368,6 +369,7 @@
 <option value="$">$ USD - US Dollar</option>
 <option value="€">€ EUR - Euro</option>
 <option value="£">£ GBP - British Pound</option>
+<option value="৳">৳ BDT - Bangladeshi Taka</option>
 <option value="₹">₹ INR - Indian Rupee</option>
 <option value="¥">¥ JPY - Japanese Yen</option>
 <option value="¥">¥ CNY - Chinese Yuan</option>
@@ -385,9 +387,8 @@
 <option value="S$">S$ SGD - Singapore Dollar</option>
 <option value="Rp">Rp IDR - Indonesian Rupiah</option>
 <option value="₱">₱ PHP - Philippine Peso</option>
-<option value="৳">৳ BDT - Bangladeshi Taka</option>
-<option value="PKR ₨">PKR ₨ PKR - Pakistani Rupee</option>
-<option value="custom">✏️ Custom Symbol...</option>
+<option value="PKR ">PKR ₨ PKR - Pakistani Rupee</option>
+<option value="custom">Custom Symbol...</option>
 </select>
 <input type="text" id="setCurrency" maxlength="6" placeholder="e.g. kr" class="w-24 px-3 py-2 rounded-lg hidden">
 </div>
@@ -409,7 +410,7 @@
 </div>
 
 <div>
-<label class="block text-sm font-medium mb-3" data-i18n="theme">🎨 Theme</label>
+<label class="block text-sm font-medium mb-3" data-i18n="theme">Theme</label>
 <div class="grid grid-cols-2 md:grid-cols-3 gap-2" id="themeGrid"></div>
 </div>
 
@@ -421,73 +422,73 @@
 </div>
 </section>
 
-<!-- Help -->
+<!-- HELP -->
 <section id="view-help" class="view hidden">
 <div class="card max-w-3xl mx-auto">
-<h2 class="text-2xl font-bold mb-4" data-i18n="help_title">❓ Help & User Guide</h2>
+<h2 class="text-2xl font-bold mb-4" data-i18n="help_title">Help & User Guide</h2>
 
-<h3 class="text-lg font-bold mt-4">🚀 Getting Started</h3>
+<h3 class="text-lg font-bold mt-4">Getting Started</h3>
 <ol class="text-sm space-y-2 list-decimal pl-5 text-muted">
 <li>Create an account by clicking "Create one" on the login screen.</li>
 <li>Set up your security questions carefully — they are needed to reset your password.</li>
-<li>Go to <strong>Rates</strong> and configure hourly rates for each vehicle type.</li>
-<li>Go to <strong>Settings</strong> to set your currency, receipt header, footer, and theme.</li>
-<li>Start issuing tickets via <strong>New Ticket</strong>.</li>
+<li>Go to Rates and configure hourly rates for each vehicle type.</li>
+<li>Go to Settings to set your currency, receipt header, footer, and theme.</li>
+<li>Start issuing tickets via New Ticket.</li>
 </ol>
 
-<h3 class="text-lg font-bold mt-4">🎫 Issuing a Ticket</h3>
+<h3 class="text-lg font-bold mt-4">Issuing a Ticket</h3>
 <ul class="text-sm space-y-1 list-disc pl-5 text-muted">
 <li>Enter the vehicle number and select type.</li>
 <li>Add owner/phone (optional).</li>
 <li>Print the receipt for the customer.</li>
 </ul>
 
-<h3 class="text-lg font-bold mt-4">🚪 Closing a Ticket (Exit)</h3>
+<h3 class="text-lg font-bold mt-4">Closing a Ticket</h3>
 <ul class="text-sm space-y-1 list-disc pl-5 text-muted">
-<li>Open <strong>Active Vehicles</strong>.</li>
-<li>Click "Exit &amp; Print" on the row — system auto-calculates fee based on duration.</li>
+<li>Open Active Vehicles.</li>
+<li>Click Exit & Print on the row — system auto-calculates fee based on duration.</li>
 <li>Hand the printed receipt to the customer.</li>
 </ul>
 
-<h3 class="text-lg font-bold mt-4">💾 Backup &amp; Restore</h3>
+<h3 class="text-lg font-bold mt-4">Backup & Restore</h3>
 <ul class="text-sm space-y-1 list-disc pl-5 text-muted">
 <li>Always download a backup before clearing data.</li>
 <li>Restore is useful when moving data to a new device.</li>
 </ul>
 
-<h3 class="text-lg font-bold mt-4">🔑 Forgot Password?</h3>
+<h3 class="text-lg font-bold mt-4">Forgot Password</h3>
 <ul class="text-sm space-y-1 list-disc pl-5 text-muted">
 <li>Click "Forgot password" on the login screen.</li>
-<li>Enter your username to load the security questions set during signup.</li>
+<li>Enter your username to load your security questions.</li>
 <li>Answer them correctly and set a new password.</li>
 </ul>
 
-<h3 class="text-lg font-bold mt-4">🌐 Language &amp; Currency</h3>
+<h3 class="text-lg font-bold mt-4">Language & Currency</h3>
 <ul class="text-sm space-y-1 list-disc pl-5 text-muted">
-<li>Use the language dropdown in the header to switch UI language.</li>
+<li>Use the language dropdown in the top-right to switch UI language.</li>
 <li>Choose from 21 currency presets or enter a custom symbol in Settings.</li>
 </ul>
 
-<h3 class="text-lg font-bold mt-4">💡 Tips</h3>
+<h3 class="text-lg font-bold mt-4">Tips</h3>
 <ul class="text-sm space-y-1 list-disc pl-5 text-muted">
-<li>Data is stored in your browser's <code>localStorage</code> — keep regular backups!</li>
+<li>Data is stored in your browser's localStorage — keep regular backups.</li>
 <li>The app works fully offline once loaded.</li>
-<li>You can host it on GitHub Pages or simply open <code>index.html</code> locally.</li>
+<li>You can host it on GitHub Pages or simply open index.html locally.</li>
 </ul>
 </div>
 </section>
 
-<!-- About -->
+<!-- ABOUT -->
 <section id="view-about" class="view hidden">
 <div class="card max-w-2xl mx-auto text-center">
 <img src="icon.png" alt="ParkEasy Logo" class="w-24 h-24 mx-auto my-4" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
-<div class="text-6xl my-4" style="display:none">🅿️</div>
+<div class="text-6xl my-4 font-bold" style="display:none">P</div>
 <h1 class="text-3xl font-bold">ParkEasy</h1>
 <p class="text-muted mb-6">Smart Car Parking Ticket Management</p>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
 <div class="info-box"><div class="text-xs uppercase text-muted">App Name</div><div class="font-bold">ParkEasy</div></div>
-<div class="info-box"><div class="text-xs uppercase text-muted">Version</div><div class="font-bold">1.0.0</div></div>
+<div class="info-box"><div class="text-xs uppercase text-muted">Version</div><div class="font-bold">2.0.1</div></div>
 <div class="info-box"><div class="text-xs uppercase text-muted">Developer</div><div class="font-bold">Tasmon Islam</div></div>
 <div class="info-box"><div class="text-xs uppercase text-muted">Email</div><div class="font-bold" style="color:var(--primary)">tasmon@outlook.com</div></div>
 </div>
@@ -510,7 +511,7 @@
 </main>
 </div>
 
-<!-- Receipt modal -->
+<!-- RECEIPT MODAL -->
 <div id="receiptModal" class="fixed inset-0 hidden items-center justify-center z-50 p-4" style="background:rgba(0,0,0,0.6)">
 <div class="bg-surface rounded-lg shadow-strong max-w-sm w-full max-h-screen overflow-y-auto">
 <div class="p-4 flex justify-between items-center border-b print-hidden" style="border-color:var(--border)">
@@ -519,7 +520,7 @@
 </div>
 <div id="receiptContent" class="p-6"></div>
 <div class="p-4 border-t flex gap-2 print-hidden" style="border-color:var(--border)">
-<button id="printReceipt" class="flex-1 btn-primary py-2 rounded-lg">🖨️ Print</button>
+<button id="printReceipt" class="flex-1 btn-primary py-2 rounded-lg">Print</button>
 <button id="closeReceipt2" class="bg-gray-300 hover:bg-gray-400 px-4 py-2 rounded-lg">Close</button>
 </div>
 </div>
