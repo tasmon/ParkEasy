@@ -1,24 +1,31 @@
 # ParkEasy - Car Parking Ticket Management
 
 A complete client-side web application for managing car parking tickets. Built with pure HTML + CSS + JavaScript (Tailwind CSS via CDN).
+
 **No build step, no server, no installation needed.**
+
 
 <img width="1918" height="942" alt="image" src="https://github.com/user-attachments/assets/c4f29be6-8710-4648-baf6-c9163ad87d5a" />
 
 >
 <img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/fdbaa2cd-21c1-437a-8983-7291191a153d" />
 
+
 >
 <img width="1917" height="939" alt="image" src="https://github.com/user-attachments/assets/95eaef11-9407-44aa-9ca2-a178ef27a216" />
+
 
 >
 <img width="1895" height="921" alt="image" src="https://github.com/user-attachments/assets/eee39897-edcd-4a12-a3e1-525927165756" />
 
+
 >
 <img width="1919" height="942" alt="image" src="https://github.com/user-attachments/assets/c3635423-0efc-4672-84c2-dfe67692db30" />
 
+
 >
 <img width="1919" height="944" alt="image" src="https://github.com/user-attachments/assets/b3ac4c40-0d4b-4885-8ae3-4e5cd0d16d4d" />
+
 
 >
 <img width="1916" height="942" alt="image" src="https://github.com/user-attachments/assets/7c06d7d5-9b4e-446f-9e3a-0ba5d91b6abe" />
@@ -82,10 +89,10 @@ If you want ParkEasy running on your office's local network with no internet:
 
 All data (users, tickets, rates, settings) is stored in your browser's `localStorage`. **This means:**
 
-- ✅ Data persists across browser restarts
-- ✅ Fully offline capable
-- ⚠️ Data is **per-browser, per-device** — not synced automatically
-- ⚠️ Clearing browser data = losing all records — **keep regular backups!**
+- Data persists across browser restarts
+- Fully offline capable
+- Data is **per-browser, per-device** — not synced automatically
+- Clearing browser data = losing all records — **keep regular backups!**
 
 ### Backing Up
 
@@ -133,7 +140,7 @@ After first opening the app:
 
 ---
 
-## 🔒 Security Note
+## Security Note
 
 This is a **client-side** application for personal or small-business use:
 
