@@ -1,6 +1,7 @@
-# ParkEasy — Car Parking Ticket Management
+# 🅿️ ParkEasy - Car Parking Ticket Management
 
-A complete client-side web application for managing car parking tickets. Built with pure HTML + CSS + JavaScript (Tailwind CSS via CDN). **No build step, no server, no installation needed.**
+A complete client-side web application for managing car parking tickets. Built with pure HTML + CSS + JavaScript (Tailwind CSS via CDN).
+**No build step, no server, no installation needed.**
 
 <img width="1918" height="942" alt="image" src="https://github.com/user-attachments/assets/c4f29be6-8710-4648-baf6-c9163ad87d5a" />
 
